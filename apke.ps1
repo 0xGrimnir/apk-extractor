@@ -61,13 +61,23 @@ elseif($dev_auth -eq 'u')
 	Write-Output "Your device is not authorized with the Android Debugger Bridge."
 	Write-Output "Let's try some simple troubleshooting first."
 	Write-Output "1.) Unplug your device."
+	Write-Host "Press any key to continue..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 	Write-Output "2.) Navigate to Developer Options and click 'Revoke USB debugging authorization'"
+	Write-Host "Press any key to continue..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 	Write-Output "3.) Restarting your ADB server..."
+	Write-Host "Press any key to continue..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 	#The following two lines restart the ADB server.
 	.\adb kill-server
 	.\adb start-server
 	Write-Output "3.5) ADB server successfully restarted."
+	Write-Host "Press any key to continue..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 	Write-Output "4.) Plug your device into your computer now. You may need to confirm a prompt on the device's screen."
+	Write-Host "Press any key to continue..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 	Write-Output "5.) Re-execute this script. If you're still not authorized, further troubleshooting is necessary."
 	
 	#Returning to original location of this script, preparing for next run.
