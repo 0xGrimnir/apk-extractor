@@ -5,7 +5,7 @@
 
 $s_loc = Get-Location
 
-Set-Location "C:\Bin\Android SDK Platform Tools" #Replace $ with the file path to your Android SDK Platform Tools installation directory.
+Set-Location "$ #Replace $ with the file path to your Android SDK Platform Tools installation directory.
 $adb_loc = Get-Location
 Write-Output "Moved to your ADB directory... Done!`n"
 Write-Output "ADB: Listing attached devices."
