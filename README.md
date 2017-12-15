@@ -7,7 +7,7 @@
 ---
 ## Notes
 
-+ You may need to run: "PowerShell ExecutionPolicy ByPass" if your system is not configured to run external scripts by default.
++ You may need to run: `PowerShell ExecutionPolicy ByPass` if your system is not configured to run external scripts by default.
 
 + Do not forget to rename or move your extracted APK file from C:\ before executing the script again.
 ---
